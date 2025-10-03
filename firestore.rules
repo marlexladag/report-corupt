@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Reports can be created by any authenticated user.
+    // To maintain anonymity and data integrity, reports cannot be updated or deleted by users.
+    // Only the designated admin can read the reports.
+    match /reports/{reportId} {
+      // Replace 'YOUR_ADMIN_UID_HERE' with your actual Firebase User ID.
+      allow read: if resource.data.isPublic == true || (request.auth != null && (request.auth.uid == 'YOUR_ADMIN_UID_HERE' || request.auth.uid == resource.data.userId));
+      allow update: if request.auth.uid == 'YOUR_ADMIN_UID_HERE';
+      allow delete: if false;
+      allow create: if request.auth != null;
+    }
+  }
+}
