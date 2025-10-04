@@ -60,15 +60,22 @@ export const PublicReportsView: React.FC<PublicReportsViewProps> = ({ onBack }) 
 
     return (
         <div>
-            <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-bold">Public Reports</h1>
-                {onBack && (
-                    <button onClick={onBack} className="text-red-600 dark:text-red-400 hover:underline">
-                        {currentUser ? 'Back to App' : 'Back to Home'}
-                    </button>
-                )}
-                <p className="text-slate-500 dark:text-slate-400 mt-2">Vetted reports submitted by citizens.</p>
+            <div className="mb-8">
+                <div className="flex justify-between items-center">
+                    <h1 className="text-3xl font-bold text-slate-800 dark:text-slate-100">Public Reports</h1>
+                    {onBack && (
+                        <button onClick={onBack} className="text-sm font-semibold text-red-600 dark:text-red-400 hover:underline">
+                            {currentUser ? 'Back to App' : 'Back to Home'}
+                        </button>
+                    )}
+                </div>
+                <p className="text-slate-500 dark:text-slate-400 mt-1">Vetted reports submitted by citizens.</p>
+                <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-900/25 border-l-4 border-yellow-400 text-yellow-800 dark:text-yellow-200 rounded-r-lg">
+                    <h3 className="font-bold">Demonstration Notice</h3>
+                    <p className="text-sm">The project data presented in this application is for demonstration purposes only and does not represent real government projects.</p>
+                </div>
             </div>
+
             <div className="space-y-6">
                 {reports.length === 0 ? (
                     <p className="text-center text-slate-500">No public reports are available at this time.</p>

@@ -30,9 +30,6 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
                 <strong>Authentication:</strong> Your Google account information is used only to verify your identity and secure your session.
             </li>
             <li>
-                <strong>AI Analysis:</strong> The content of your report (text and files) is sent to the Google Gemini API for the sole purpose of generating an analytical summary. We do not permit Google to use this data for training their models or for any other purpose.
-            </li>
-            <li>
                 <strong>Anonymity:</strong> Your personal account information is NEVER linked to the content of the report submitted for analysis. Our system is designed to decouple user identity from report data to maintain your anonymity.
             </li>
         </ul>
