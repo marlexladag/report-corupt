@@ -30,7 +30,6 @@ export const Home: React.FC<HomeProps> = ({ onShowPublicReports }) => {
 
     return (
         <div className="text-center py-12">
-            <h2 className="text-4xl font-extrabold text-slate-800 dark:text-slate-100 mb-4">Shine a Light on Corruption</h2>
             <p className="max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-300 mb-8">
                 Your voice matters. Securely report ghost projects, substandard infrastructure, and corrupt officials to help build a more transparent and accountable society.
             </p>

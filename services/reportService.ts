@@ -79,7 +79,7 @@ export const getPublicReports = async (): Promise<ReportWithId[]> => {
         return reports;
     } catch (error) {
         console.error("Error getting public documents: ", error);
-        throw new Error("Could not fetch public reports.");
+        throw new Error("No public reports are available at this time.");
     }
 };
 
