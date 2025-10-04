@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ onShowAdmin, onShowUserReports, 
         <button onClick={onGoHome} className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-lg p-1">
           <EyeIcon className="h-6 w-6 text-red-600" />
           <h1 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-100">
-            Corruption<span className="text-red-600">Watch</span>
+            Bantay<span className="text-red-600">Buwaya</span>
           </h1>
         </button>
 

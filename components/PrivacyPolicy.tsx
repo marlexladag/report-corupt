@@ -11,7 +11,7 @@ export const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ onBack }) => {
         <p><em>Last Updated: {new Date().toLocaleDateString()}</em></p>
 
         <p>
-            CorruptionWatch is committed to protecting your privacy and ensuring the anonymity of your reports. This Privacy Policy explains how we handle your information.
+            BantayBuwaya is committed to protecting your privacy and ensuring the anonymity of your reports. This Privacy Policy explains how we handle your information.
         </p>
 
         <h2 className="text-xl font-semibold mt-4 mb-2">1. Information We Collect</h2>
